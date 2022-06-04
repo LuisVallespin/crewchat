@@ -1,9 +1,10 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { Chat, Menu } from '../components'
 
 const Home: NextPage = () => (
-  <h1 className="text-3xl font-bold underline">Hello world!</h1>
+  <div id="main" className="grid h-screen w-full grid-cols-12 gap-0">
+    <Menu />
+    <Chat />
+  </div>
 )
 export default Home
